@@ -39,6 +39,11 @@ Hotel booking analysis using HiveQL on cloudera
 
 ## Steps to load the data into Hive
 
-1. Used wget command to load the data into hive
+1. Used wget command to load the data into hive 
 2. Removed header from the data by using 
-    `put`
+    `tail -n 119389 hotel_bookings.csv > hotel_booking.csv` 
+3. Loaded the file into HDFS using 
+    `hdfs dfs -put hotel_booking.csv`
+4. Created Schema into Hive
+5. Created partioning on is_canceled, year and month
+6. Inserted the data into Hive
