@@ -36,3 +36,9 @@ Hotel booking analysis using HiveQL on cloudera
 31) reservation_status: Reservation last status, assuming one of three categories: Canceled – booking was canceled by the customer; Check-Out – customer has checked in but already departed; No-Show – customer did not check-in and did inform the hotel of the reason why.
 32) reservation_status_date: Date at which the last status was set. This variable can be used in conjunction with the ReservationStatus to understand when was the booking canceled or when did the customer checked-out of the hotel.
 
+
+## Steps to load the data into Hive
+
+1. Used wget command to load the data into hive
+2. Removed header from the data by using 
+    `put`
